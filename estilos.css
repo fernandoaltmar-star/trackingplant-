@@ -1,0 +1,208 @@
+/* Estilos generales */
+body {
+    font-family: Futura;
+    margin: 0;
+    background-color: #345c70;
+    color: rgb(235, 133, 133);
+}
+
+#encabezado {
+    background-color: #ffffff;
+    color: rgb(122, 61, 61);
+    padding: 1px;
+    text-align: center;
+    text-decoration: none; 
+}
+
+#menu {
+    background-color: #04a3d3;
+    padding: 10px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#contenido-principal {
+    padding: 20px;
+    width: 65%;
+    float: left;
+}
+
+#columna-derecha {
+    width: 30%;
+    float: right;
+    background: #dcdde1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#pie-de-pagina {
+    clear: both;
+    background-color: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.imagen-principal {
+    max-width: 10%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;    /* Centrado vertical */
+    height: 100vh;         /* Altura para el centrado vertical */
+  }
+
+.form-container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 600px;
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+input[type="text"],
+input[type="telefono"],
+input[type="codigo"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    height: 1.2em; /* Mantiene el espacio */
+}
+/* Estilos del contenedor del menú */
+.menu-vertical {
+    width: 200px;
+    background-color: #333;
+    padding: 1em 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Elimina las viñetas de la lista */
+.menu-vertical ul {
+    list-style-type: none; /* Esto quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para cada elemento de la lista (<li>) */
+.menu-vertical li {
+    margin: 0;
+}
+
+/* Estilos para los enlaces (<a>) dentro de la lista */
+.menu-vertical a {
+    display: block; /* Esto hace que el enlace ocupe todo el ancho del <li> */
+    padding: 1em 1.5em; /* Añade espacio interno para que el área de clic sea más grande */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Añade una transición suave al pasar el cursor */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+.menu-vertical a:hover {
+    background-color: #575757; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.store-container, .cart-container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee;
+}
+
+button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
